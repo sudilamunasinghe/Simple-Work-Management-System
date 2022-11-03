@@ -1,0 +1,103 @@
+body{
+    /* background: #fc00ff;  
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  
+    background: linear-gradient(to right, #00dbde, #fc00ff); */
+    min-width:300px;
+    background-color: rgb(229, 240, 245);
+}
+.verify-card{
+    width: 40%;
+    height: auto;
+    background-color: #fff;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.verify-card h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #0077ff;
+    margin: 0;
+    padding-bottom: 0;
+}
+.verify-underline{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #0077ff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.verify-note{
+    background-color: rgb(131, 189, 144);
+    border: 2px solid rgb(90, 185, 112);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    width: auto;
+    height: auto;
+}
+.verify-note p{
+    font-size:1rem;
+    font-family: sans-serif;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    color: rgb(0, 83, 19);
+}
+.verify-fields{
+    width: 100%;
+    margin-top: 20px;
+}
+.verify-fields input{
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(94, 94, 94);
+    box-sizing: border-box;
+}
+.verify-fields input::placeholder{
+    font-size: 15px;
+}
+#verify-submit{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    background-color: #0077ff;
+    color: white;
+    border: 2px solid #0077ff;
+    font-size:18px;
+    cursor: pointer;
+}
+#verify-submit:hover{
+    background-color: #0059ff;
+    border: 2px solid #0059ff;
+}
+@media screen and (max-width:920px){
+    .verify-card{
+        width: 60%;
+    }
+}
+@media screen and (max-width:620px){
+    .verify-card{
+        width: 75%;
+    }
+}
+@media screen and (max-width:460px){
+    .verify-card h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:350px){
+    .verify-note p{
+        font-size: 4.5vw;
+    }
+}

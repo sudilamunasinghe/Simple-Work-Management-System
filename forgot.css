@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background: #fc00ff;  
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  
+    background: linear-gradient(to right, #00dbde, #fc00ff); */
+    background-color: rgb(229, 240, 245);
+}
+.forgot-card{
+    width:40%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 10px;
+}
+.forgot-card img{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.forgot-card h1{
+    font-family: sans-serif;
+    text-align: center;
+    color: #0077ff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 30px;
+}
+.header-underline{
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #0077ff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+.forgot-fields{
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.forgot-fields p{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+.forgot-fields input{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* .forgot-fields input::placeholder{
+    padding-left: 10px;
+} */
+.forgot-btn-div{
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin: 0;
+}
+#forgot-btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    background-color: #0077ff;
+    color: white;
+    border: 2px solid #0077ff;
+    font-size:18px;
+    cursor: pointer;
+}
+#forgot-btn:hover{
+    background-color: #0059ff;
+    border: 2px solid #0059ff;
+}
+@media screen and (max-width:975px){
+    .forgot-card{
+        width: 60%;
+    }
+}
+@media screen and (max-width:650px){
+    .forgot-card{
+        width: 75%;
+    }
+}
+@media screen and (max-width:520px){
+    .forgot-card h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:450px){
+    .forgot-card{
+        width: 90%;
+    }
+    .forgot-card h1{
+        font-size: 17px;
+    }
+    .forgot-fields p{
+        font-size: 12px;
+    }
+    .forgot-fields input::placeholder{
+        font-size: 12px;
+    }
+    #forgot-btn{
+        font-size: 15px;
+    }
+}
